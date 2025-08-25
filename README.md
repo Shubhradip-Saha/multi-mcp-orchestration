@@ -45,10 +45,12 @@ It will help you get started with MCP server implementation into your project.
 
 7) Directory Structure & Usage:
 
-- You need three main directories:
+- You need five main directories:
   - `.cursor` or `.vscode`: For configuration files, `mcp.json`, and agentic instruction files.
   - `.env`: For storing tokens, credentials, and secrets.
   - `.github`: For storing workflows and MDC instruction files for the agent to follow.
+  - `github-mcp`: For GitHub MCP server configuration and instructions.
+  - `azure-devops-mcp`: For Azure DevOps MCP server configuration and instructions.
   - In Cursor, you can add configuration through Cursor settings (General and Project Specific). For project-specific configuration, add the MDC file in the `.cursor` directory.
   - `.gitignore` file to avoid pushing the above directories and files to your remote repository.
 
