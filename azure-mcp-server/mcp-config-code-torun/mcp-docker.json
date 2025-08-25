@@ -1,0 +1,17 @@
+#Need Docker Daemon as a bg-process
+{
+  "servers": {
+    "Azure MCP Server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--env-file",#.env file with appropriate authentication variables (e.g., AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET)
+        "---env path ---",
+        "mcr.microsoft.com/azure-sdk/azure-mcp:latest"
+      ]
+    }
+  }
+}
+
